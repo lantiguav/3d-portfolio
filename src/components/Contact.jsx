@@ -67,7 +67,12 @@ const Contact = () => {
         },
         (error) => {
           setLoading(false)
-          console.log(error)
+          console.log(
+            error,
+            import.meta.env.VITE_EMAILJS_SERVICE_ID,
+            import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+            import.meta.env.VITE_EMAILJS_TEMPLATE_ID
+          )
 
           toast.error(
             `Oops! We can't send the email at this moment. Please reach out directly to ${
