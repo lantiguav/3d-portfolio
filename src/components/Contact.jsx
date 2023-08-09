@@ -67,7 +67,7 @@ const Contact = () => {
         },
         (error) => {
           setLoading(false)
-          console.log(error)
+          console.log({ error })
 
           toast.error(
             `Oops! We can't send the email at this moment. Please reach out directly to ${
