@@ -16,10 +16,7 @@ const ProjectCard = ({
   source_code_link,
 }) => {
   return (
-    <motion.a
-      variants={fadeIn('up', 'spring', index * 0.25, 0.75)}
-      href={source_code_link}
-      target='_blank'>
+    <motion.div variants={fadeIn('up', 'spring', index * 0.25, 0.75)}>
       <Tilt
         options={{ max: 45, scale: 1, speed: 450 }}
         className='bg-tertiary p-5 rounded-2xl w-full h-full flex flex-col'>
@@ -30,13 +27,17 @@ const ProjectCard = ({
             className='w-full h-full object-cover rounded-2xl'
           />
           <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
-            <div className='black-gradient w-10 h-10 rounded full flex justify-center items-center cursor pointer'>
+            <a
+              className='black-gradient w-10 h-10 rounded full flex justify-center items-center cursor pointer'
+              href={source_code_link}
+              target='_blank'
+              rel='noreferrer'>
               <img
                 src={open}
                 alt='Open'
                 className='w-2/3 h-2/3 object-contain'
               />
-            </div>
+            </a>
           </div>
         </div>
 
@@ -54,7 +55,7 @@ const ProjectCard = ({
           </div>
         </div>
       </Tilt>
-    </motion.a>
+    </motion.div>
   )
 }
 
