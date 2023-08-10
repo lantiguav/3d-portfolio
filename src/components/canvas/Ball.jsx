@@ -43,7 +43,7 @@ const BallCanvas = ({ icon }) => {
       <directionalLight position={[0, 0, 0.05]} />
 
       <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls enableZoom={false} />
+        <OrbitControls enableZoom={false} enablePan={false} />
         <Ball imgUrl={icon} />
       </Suspense>
 

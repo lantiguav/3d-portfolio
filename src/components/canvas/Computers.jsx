@@ -53,14 +53,16 @@ const ComputersCanvas = () => {
         position={[-20, 50, 10]}
         intensity={1}
         color='#915eff'
-        castShadow
       />
 
-      <Suspense fallback={<CanvasLoader />}>
+      <Suspense fallback={<CanvasLoader prefix='Loading cool stuff :) ... ' marginLeft={-100}/>}>
         <OrbitControls
           enableZoom={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
+          enablePan={false}
+          enableRotate={false}
+          autoRotate={true}
         />
         <Computers isMobile={isMobile} />
       </Suspense>

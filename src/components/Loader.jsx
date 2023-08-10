@@ -1,6 +1,6 @@
 import { Html, useProgress } from '@react-three/drei'
 
-const Loader = () => {
+const Loader = ({ prefix = '', marginLeft = 0 }) => {
   const { progress } = useProgress()
   return (
     <Html>
@@ -11,8 +11,10 @@ const Loader = () => {
           color: '#f1f1f1',
           fontWeight: 800,
           marginTop: 40,
+          minWidth: 230,
+          marginLeft: marginLeft
         }}>
-        {progress.toFixed(0)}%
+        {prefix}{progress.toFixed(0)}%
       </p>
     </Html>
   )
