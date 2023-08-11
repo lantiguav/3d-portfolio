@@ -21,8 +21,8 @@ const Hero = () => {
           </p>
         </div>
       </div>
-      <div className='absolute top-80 xxs:top-60 lg:top-28 flex justify-center w-full lg:justify-end max-w-6xl'>
-          <img className='w-[27rem] lg:w-[35rem]' src={victor} alt="Photo of Victor Lantigua sitting" />
+      <div className='absolute top-80 xxs:top-60 lg:top-28 bottom-10 flex justify-center w-full lg:justify-end max-w-6xl'>
+          <img className='h-full object-cover' src={victor} alt="Photo of Victor Lantigua sitting" />
       </div>
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center z-20'>
         <a href='#about' aria-label='Go to about'>
