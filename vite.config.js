@@ -12,7 +12,7 @@ export default defineConfig(({ mode }) => {
       include: "**/*.jsx"
     })],
     define: {
-      __ANALYTICS_ID__: JSON.stringify(env.VERCEL_WEB_ANALYTICS_ID)
+      __ANALYTICS_ID__: JSON.stringify(env.VERCEL_ANALYTICS_ID)
     },
   }
 })
