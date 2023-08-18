@@ -8,6 +8,6 @@ export default defineConfig({
     include: "**/*.jsx"
   })],
   define: {
-    __ANALYTICS_ID__: process.env.VITE_VERCEL_ANALYTICS_ID,
+    __ANALYTICS_ID__: process.env.VERCEL_ANALYTICS_ID
   },
 })
