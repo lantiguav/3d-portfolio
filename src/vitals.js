@@ -9,8 +9,7 @@ function getConnectionSpeed() {
 }
 
 export function sendToVercelAnalytics(metric) {
-  // eslint-disable-next-line no-undef
-  const analyticsId = process.env.VERCEL_ANALYTICS_ID;
+  const analyticsId = import.meta.env.PUBLIC_VERCEL_ANALYTICS_ID
 
   console.log('analyticsId', analyticsId)
 
