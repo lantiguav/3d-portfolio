@@ -12,8 +12,6 @@ export function sendToVercelAnalytics(metric) {
   // eslint-disable-next-line no-undef
   const analyticsId = __ANALYTICS_ID__
 
-  console.log('analyticsId', analyticsId)
-
   if (!analyticsId) {
     return;
   }
