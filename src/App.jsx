@@ -1,6 +1,8 @@
 import { BrowserRouter } from 'react-router-dom'
 import { ToastContainer } from 'react-toastify'
 import { Analytics } from '@vercel/analytics/react'
+import reportWebVitals from './reportWebVitals';
+import { sendToVercelAnalytics } from './vitals';
 
 import 'react-toastify/dist/ReactToastify.css'
 
