@@ -13,7 +13,10 @@ export function sendToVercelAnalytics(metric) {
 
   // eslint-disable-next-line no-undef
   console.log('__ANALYTICS_ID__', __ANALYTICS_ID__)
-  console.log('1')
+  console.log('__ANALYTICS_ID__', __ANALYTICS_ID__)
+  console.log('process.env', process.env)
+  console.log('import.meta.env', import.meta.env)
+
   if (!analyticsId) {
     return;
   }
