@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import { useRef, useState } from 'react'
 import { motion } from 'framer-motion'
 import emailjs from '@emailjs/browser'
@@ -32,16 +33,16 @@ const Contact = () => {
 
     emailjs
       .send(
-        process.env.NEXT_EMAILJS_SERVICE_ID,
-        process.env.NEXT_EMAILJS_TEMPLATE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
-          to_name: process.env.NEXT_EMAILJS_NAME_TO,
+          to_name: process.env.NEXT_PUBLIC_EMAILJS_NAME_TO,
           from_email: form.email,
-          to_email: process.env.NEXT_EMAILJS_EMAIL_TO,
+          to_email: process.env.NEXT_PUBLIC_EMAILJS_EMAIL_TO,
           message: form.message,
         },
-        process.env.NEXT_EMAILJS_PUBLIC_KEY
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
       )
       .then(
         () => {
@@ -71,7 +72,7 @@ const Contact = () => {
 
           toast.error(
             `Oops! We can't send the email at this moment. Please reach out directly to ${
-              process.env.NEXT_EMAILJS_EMAIL_TO
+              process.env.NEXT_PUBLIC_EMAILJS_EMAIL_TO
             }`
           )
         }
