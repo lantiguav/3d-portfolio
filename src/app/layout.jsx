@@ -2,6 +2,9 @@ import '../index.css'
 
 export const metadata = {
   title: 'Victor Lantigua | Portfolio',
+  icons: {
+    icon: '/favicon.png',
+  },
 }
 
 export default function RootLayout({ children }) {
