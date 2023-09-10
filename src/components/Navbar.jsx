@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { useState } from 'react'
+import Link from 'next/link'
 
 import clsx from 'clsx'
 import { styles } from '../styles'
 import { navLinks } from '../constants'
 import { logo, menu, close } from '../assets'
+import Image from 'next/image'
 
 const Navbar = () => {
   const [active, setActive] = useState('')
@@ -15,13 +16,15 @@ const Navbar = () => {
       className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-30 bg-primary`}>
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
         <Link
-          to='/'
+          href='/'
           className='flex items-center gap-4'
-          onClick={() => {
+          onClick={(e) => {
             setActive('')
+            e.preventDefault()
+            window.history.pushState('', '', '/')
             window.scrollTo(0, 0)
           }}>
-          <img src={logo} alt='logo' className='w-8 h-8 object-contain' />
+          <Image src={logo} alt='logo' className='w-8 h-8 object-contain' />
           <p className='text-white text-lg font-medium cursor-pointer border-l-2 pl-4 hidden xxs:block'>
             Victor Lantigua
           </p>
@@ -38,13 +41,13 @@ const Navbar = () => {
                 }
               )}
               onClick={() => setActive(link.title)}>
-              <a href={`#${link.id}`}>{link.title}</a>
+              <Link href={`#${link.id}`}>{link.title}</Link>
             </li>
           ))}
         </ul>
         <div className='sm:hidden flex flex-1 justify-end items-center'>
           <img
-            src={toggle ? close : menu}
+            src={toggle ? close.src : menu.src}
             alt='menu'
             className='w-[28px] h-[28px] object-contain cursor-pointer'
             onClick={() => setToggle(!toggle)}
