@@ -1,20 +1,15 @@
 import {
   mobile,
   backend,
-  creator,
   web,
   javascript,
   typescript,
   html,
   css,
   reactjs,
-  redux,
   tailwind,
-  nodejs,
-  mongodb,
   git,
   figma,
-  docker,
   storyblok,
   laravel,
   fimed,
@@ -28,11 +23,10 @@ import {
   calculators,
   serviciosRd,
   websiteBuilder,
-  expendableMaterials,
-  threejs,
   christian,
   claudio,
   alirio,
+  theBrandBoost,
 } from '../assets'
 
 export const navLinks = [
@@ -195,6 +189,31 @@ const testimonials = [
 
 const projects = [
   {
+    name: 'The Brand Boost',
+    description:
+      'Modern landing page designed from scratch in Figma, and created with Next.js, Tailwind CSS and a headless CMS',
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'tailwind',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'datocms',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'vercel',
+        color: 'blue-text-gradient',
+      },
+    ],
+    image: theBrandBoost,
+    source_code_link: 'https://thebrandboostqa.vercel.app/',
+  },
+  {
     name: 'Modern Navigation Bar',
     description:
       "An innovative and user-friendly navigation bar that significantly increased the company's revenue.",
@@ -258,15 +277,15 @@ const projects = [
     description: 'React component library for calculators at Bankrate.',
     tags: [
       {
-        name: 'scss',
+        name: 'react',
         color: 'blue-text-gradient',
       },
       {
-        name: 'laravel',
+        name: 'scss',
         color: 'green-text-gradient',
       },
       {
-        name: 'storyblok',
+        name: 'lerna',
         color: 'pink-text-gradient',
       },
     ],
@@ -290,27 +309,6 @@ const projects = [
     ],
     image: websiteBuilder,
     source_code_link: 'https://www.web.com/websitebuilder?brand=websitebuilder',
-  },
-  {
-    name: 'Governmental Services',
-    description:
-      'Web application that allows dominican citizens to request governmental services online.',
-    tags: [
-      {
-        name: 'react',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'restapi',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'scss',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: serviciosRd,
-    source_code_link: 'https://serviciosrd.gob.do/',
   },
 ]
 

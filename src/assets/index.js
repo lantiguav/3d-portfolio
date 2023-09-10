@@ -41,6 +41,7 @@ import serviciosRd from './projects/servicios-rd.png'
 import websiteBuilder from './projects/website-builder.png'
 import expendableMaterials from './projects/expendable-materials.png'
 import calculators from './projects/calculators.png'
+import theBrandBoost from './projects/the-brand-boost.png'
 
 // People
 import christian from './profiles/christian.jpeg'
@@ -83,6 +84,7 @@ export {
   calculators,
   serviciosRd,
   websiteBuilder,
+  theBrandBoost,
   expendableMaterials,
   christian,
   claudio,
