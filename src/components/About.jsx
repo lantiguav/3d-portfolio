@@ -5,6 +5,7 @@ import { services } from '../constants'
 import { fadeIn } from '../utils/motion'
 import SectionWrapper from './hoc/SectionWrapper'
 import Heading from './Heading'
+import Image from 'next/image'
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
@@ -15,7 +16,7 @@ const ServiceCard = ({ index, title, icon }) => {
         <div
           options={{ max: 45, scale: 1, speed: 450 }}
           className='bg-tertiary rounded-[20px] py-5 px-6 sm:px-12 min-h-[140px] sm:min-h-[280px] flex justify-evenly items-center flex-col h-full'>
-          <img src={icon} alt={title} className='w-16 h-16 object-contain' />
+          <Image src={icon} alt={title} className='w-16 h-16 object-contain' />
           <h3 className='text-white text-xl font-bold text-center mt-2'>
             {title}
           </h3>

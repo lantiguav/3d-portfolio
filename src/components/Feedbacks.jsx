@@ -5,6 +5,7 @@ import SectionWrapper from './hoc/SectionWrapper'
 import { fadeIn } from '../utils/motion'
 import { testimonials } from '../constants'
 import Heading from './Heading'
+import Image from 'next/image'
 
 const FeedbackCard = ({
   index,
@@ -31,7 +32,7 @@ const FeedbackCard = ({
             </p>
           </div>
 
-          <img
+          <Image
             src={image}
             alt={`Feedback by ${name}`}
             className='w-10 h-10 rounded-full object-cover'

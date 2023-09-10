@@ -6,6 +6,7 @@ import SectionWrapper from './hoc/SectionWrapper'
 import { projects } from '../constants'
 import { fadeIn } from '../utils/motion'
 import Heading from './Heading'
+import Image from 'next/image'
 
 const ProjectCard = ({
   index,
@@ -21,7 +22,7 @@ const ProjectCard = ({
         options={{ max: 45, scale: 1, speed: 450 }}
         className='bg-tertiary p-5 rounded-2xl w-full h-full flex flex-col'>
         <div className='relative w-full h-[230px]'>
-          <img
+          <Image
             src={image}
             alt={name}
             className='w-full h-full object-cover rounded-2xl'
@@ -32,7 +33,7 @@ const ProjectCard = ({
               href={source_code_link}
               target='_blank'
               rel='noreferrer'>
-              <img
+              <Image
                 src={open}
                 alt='Open'
                 className='w-2/3 h-2/3 object-contain'
