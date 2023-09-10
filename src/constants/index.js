@@ -193,7 +193,7 @@ const projects = [
       'Modern landing page designed from scratch in Figma, and created with Next.js, Tailwind CSS and a headless CMS',
     tags: [
       {
-        name: 'react',
+        name: 'nextjs',
         color: 'blue-text-gradient',
       },
       {
