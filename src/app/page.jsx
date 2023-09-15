@@ -6,13 +6,11 @@ import 'react-toastify/dist/ReactToastify.css'
 
 import {
   About,
-  Contact,
   Experience,
   Feedbacks,
   Hero,
   Navbar,
   Works,
-  StarsCanvas,
 } from '../components'
 const App = () => {
   return (
@@ -27,10 +25,6 @@ const App = () => {
           <Experience />
           <Works />
           <Feedbacks />
-          <div className='relative z-0'>
-            <Contact />
-            <StarsCanvas />
-          </div>
         </main>
       </div>
       <ToastContainer
