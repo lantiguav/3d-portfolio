@@ -36,6 +36,7 @@ import bairesdev from './company/bairesdev.png'
 // Projects
 import awards2022 from './projects/awards2022.png'
 import awards2023 from './projects/awards2023.png'
+import awards2024 from './projects/awards2024.png'
 import sitenav from './projects/sitenav.png'
 import serviciosRd from './projects/servicios-rd.png'
 import websiteBuilder from './projects/website-builder.png'
@@ -80,6 +81,7 @@ export {
   bairesdev,
   awards2022,
   awards2023,
+  awards2024,
   sitenav,
   calculators,
   serviciosRd,

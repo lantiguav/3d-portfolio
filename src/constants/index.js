@@ -19,6 +19,7 @@ import {
   bairesdev,
   awards2022,
   awards2023,
+  awards2024,
   sitenav,
   calculators,
   websiteBuilder,
@@ -188,6 +189,27 @@ const testimonials = [
 
 const projects = [
   {
+    name: 'The 2024 Bankrate Awards',
+    description:
+      'A sophisticated series of pages highlighting the top financial products of 2023 in an appealing manner.',
+    tags: [
+      {
+        name: 'tailwind',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'laravel',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'storyblok',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: awards2024,
+    source_code_link: 'https://bankrate.com/awards/',
+  },
+  {
     name: 'The Brand Boost',
     description:
       'Modern landing page designed from scratch in Figma, and created with Next.js, Tailwind CSS and a headless CMS',
@@ -248,7 +270,7 @@ const projects = [
       },
     ],
     image: awards2023,
-    source_code_link: 'https://bankrate.com/awards/',
+    source_code_link: 'https://bankrate.com/awards/2023/',
   },
   {
     name: 'The 2022 Bankrate Awards',
