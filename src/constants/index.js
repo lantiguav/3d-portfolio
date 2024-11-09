@@ -192,7 +192,7 @@ const projects = [
   {
     name: 'Lina Y Victor',
     description:
-      'A minimalist digital wedding invitation featuring personalized URLs for each guest and integrated Google Forms for RSVPs.',
+      'A minimalist digital wedding invitation featuring personalized URLs for each guest, and a custom form for RSVPs that submits information directly to a Google Form.',
     tags: [
       {
         name: 'astro',
