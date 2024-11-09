@@ -21,6 +21,7 @@ import {
   awards2023,
   awards2024,
   sitenav,
+  linayvictor,
   calculators,
   websiteBuilder,
   christian,
@@ -46,16 +47,16 @@ export const navLinks = [
 
 const services = [
   {
-    title: 'Software Engineer',
+    title: 'Detail-oriented',
     icon: web,
   },
   {
-    title: 'Full Stack Developer',
-    icon: backend,
+    title: 'Collaborative',
+    icon: mobile,
   },
   {
-    title: 'Tech Enthusiast',
-    icon: mobile,
+    title: 'Communicative',
+    icon: backend,
   },
 ]
 
@@ -104,14 +105,36 @@ const technologies = [
 
 const experiences = [
   {
-    title: 'Software Developer',
-    company_name: 'Fimed',
-    icon: fimed,
-    iconBg: '#E6DEDD',
-    date: 'Jul 2018 - Apr 2019',
+    title: 'Software Engineer',
+    company_name: 'BairesDev',
+    icon: bairesdev,
+    iconBg: '#383E56',
+    date: 'Sep 2021 - Present',
     points: [
-      'collaborated with the frontend and backend development of a financial application aimed at professionals in the health sector.',
-      'Managed SQL Server databases',
+      'Developing and maintaining web applications using React.js, Laravel, Tailwind CSS and other related technologies.',
+      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
+      'Implementing responsive design and ensuring cross-browser compatibility.',
+      'Participating in code reviews and providing constructive feedback to other developers.',
+    ],
+  },
+  {
+    title: 'Software Technical Lead',
+    company_name: 'Newtech',
+    icon: newtech,
+    iconBg: '#E6DEDD',
+    date: 'Jun 2021 - Sep 2021',
+    points: [
+      'Participated in the development and maintenance of an exceptional website builder tool, catering to millions of users.',
+    ],
+  },
+  {
+    title: 'Lead Developer',
+    company_name: 'Banco Popular',
+    icon: popular,
+    iconBg: '#383E56',
+    date: 'Jan 2020 - Jun 2021',
+    points: [
+      'Led the development and execution of digitization and optimization efforts for various business processes using a BPM (Business Process Management) tool.',
     ],
   },
   {
@@ -126,36 +149,14 @@ const experiences = [
     ],
   },
   {
-    title: 'Lead Developer',
-    company_name: 'Banco Popular',
-    icon: popular,
-    iconBg: '#383E56',
-    date: 'Jan 2020 - Jun 2021',
-    points: [
-      'Led the development and execution of digitization and optimization efforts for various business processes using a BPM (Business Process Management) tool.',
-    ],
-  },
-  {
-    title: 'Software Technical Lead',
-    company_name: 'Newtech',
-    icon: newtech,
+    title: 'Software Developer',
+    company_name: 'Fimed',
+    icon: fimed,
     iconBg: '#E6DEDD',
-    date: 'Jun 2021 - Sep 2021',
+    date: 'Jul 2018 - Apr 2019',
     points: [
-      'Participated in the development and maintenance of an exceptional website builder tool, catering to millions of users.',
-    ],
-  },
-  {
-    title: 'Software Engineer',
-    company_name: 'BairesDev',
-    icon: bairesdev,
-    iconBg: '#383E56',
-    date: 'Sep 2021 - Present',
-    points: [
-      'Developing and maintaining web applications using React.js, Laravel, Tailwind CSS and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
+      'collaborated with the frontend and backend development of a financial application aimed at professionals in the health sector.',
+      'Managed SQL Server databases',
     ],
   },
 ]
@@ -188,6 +189,27 @@ const testimonials = [
 ]
 
 const projects = [
+  {
+    name: 'Lina Y Victor',
+    description:
+      'A minimalistic digital invitation for my wedding, with custom URLs for each guest, and integration with Google Forms for RSVPs.',
+    tags: [
+      {
+        name: 'astro',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'sentry',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'vercel',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: linayvictor,
+    source_code_link: 'https://linayvictor.com/t',
+  },
   {
     name: 'The 2024 Bankrate Awards',
     description:
@@ -295,7 +317,7 @@ const projects = [
   },
   {
     name: 'Financial Calculators',
-    description: 'React component library for calculators at Bankrate.',
+    description: 'React component monorepo for financial calculators at Bankrate.',
     tags: [
       {
         name: 'react',
