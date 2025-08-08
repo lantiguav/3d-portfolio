@@ -1,6 +1,6 @@
 # 3D Portfolio
 
-3D portfolio created with React + Three.js
+3D portfolio created with Next.js, React, and Three.js
 
 ## Installation
 
