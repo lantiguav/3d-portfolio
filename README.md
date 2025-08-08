@@ -2,7 +2,7 @@
 
 3D portfolio created with React + Three.js
 
-## Instalation
+## Installation
 
 ```npm install```
 
