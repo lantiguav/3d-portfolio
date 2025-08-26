@@ -118,18 +118,15 @@ export default function ChatWidget() {
 
     const initChat = async () => {
       try {
-        // First test if the webhook is accessible
-        const webhookUrl = 'https://n8n.victorlantigua.com/webhook/1cba34d3-d8f8-4c8f-b296-e85817509163/chat'
+        // Use our API route instead of direct n8n webhook
+        const webhookUrl = '/api/n8n'
         
-        // Test the webhook endpoint
+        // Test the API endpoint
         const testResponse = await fetch(webhookUrl, {
-          method: 'OPTIONS',
-          headers: {
-            'Content-Type': 'application/json',
-          },
+          method: 'GET',
         }).catch(() => null)
 
-        console.log('Webhook test response:', testResponse?.status)
+        console.log('API test response:', testResponse?.status)
 
         // Initialize chat
         await createChat({
