@@ -61,10 +61,22 @@ export async function POST(request) {
     
   } catch (error) {
     console.error('n8n webhook error:', error)
-    return NextResponse.json(
-      { error: 'Failed to communicate with n8n webhook', details: error.message },
-      { status: 500 }
-    )
+    
+    // Return user-friendly error messages for the chat widget
+    let userMessage = "I'm having trouble connecting right now. Please try again in a moment."
+    
+    if (error.message.includes('404')) {
+      userMessage = "The chat service is currently unavailable. Please check back later."
+    } else if (error.message.includes('401') || error.message.includes('403')) {
+      userMessage = "Authentication issue with the chat service. Please contact support."
+    } else if (error.message.includes('500')) {
+      userMessage = "The chat service is experiencing technical difficulties. Please try again later."
+    }
+    
+    // Return in chat widget format
+    return NextResponse.json({
+      output: userMessage
+    }, { status: 200 }) // Return 200 so chat widget doesn't show additional errors
   }
 }
 
@@ -74,5 +86,17 @@ export async function GET() {
     message: 'n8n webhook endpoint is ready',
     method: 'POST',
     description: 'Send POST requests with JSON payload to trigger n8n flow'
+  })
+}
+
+// Handle OPTIONS requests for CORS
+export async function OPTIONS() {
+  return new NextResponse(null, {
+    status: 200,
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
+      'Access-Control-Allow-Headers': 'Content-Type',
+    },
   })
 }
