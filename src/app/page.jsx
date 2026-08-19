@@ -12,8 +12,7 @@ import {
   Hero,
   Navbar,
   Works,
-  StarsCanvas,
-  ChatWidget
+  StarsCanvas
 } from '../components'
 
 const App = () => {
@@ -47,7 +46,6 @@ const App = () => {
         pauseOnHover
         theme='light'
       />
-      <ChatWidget />
       <Analytics />
     </>
   )
