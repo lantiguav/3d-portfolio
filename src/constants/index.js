@@ -208,7 +208,7 @@ const projects = [
       },
     ],
     image: linayvictor,
-    source_code_link: 'https://linayvictor.com/t',
+    source_code_link: 'https://lina-y-victor.vercel.app/',
   },
   {
     name: 'The 2024 Bankrate Awards',
