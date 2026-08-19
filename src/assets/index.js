@@ -44,6 +44,7 @@ import expendableMaterials from './projects/expendable-materials.png'
 import calculators from './projects/calculators.png'
 import theBrandBoost from './projects/the-brand-boost.png'
 import linayvictor from './projects/linayvictor.png'
+import linaRodriguezMkt from './projects/linarodriguezmkt.png'
 
 // People
 import christian from './profiles/christian.jpeg'
@@ -81,6 +82,7 @@ export {
   newtech,
   bairesdev,
   linayvictor,
+  linaRodriguezMkt,
   awards2022,
   awards2023,
   awards2024,

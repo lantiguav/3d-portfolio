@@ -22,6 +22,7 @@ import {
   awards2024,
   sitenav,
   linayvictor,
+  linaRodriguezMkt,
   calculators,
   websiteBuilder,
   christian,
@@ -189,6 +190,27 @@ const testimonials = [
 ]
 
 const projects = [
+  {
+    name: 'Lina Rodriguez Marketing',
+    description:
+      'A modern personal website for a marketing specialist, designed to showcase her expertise and services.',
+    tags: [
+      {
+        name: 'astro',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'tailwind',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'react',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: linaRodriguezMkt,
+    source_code_link: 'https://linarodriguezmkt.com',
+  },
   {
     name: 'Lina Y Victor',
     description:
